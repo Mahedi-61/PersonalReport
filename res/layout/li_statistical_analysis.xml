@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5.0sp"
+    android:paddingLeft="3.0sp"
+    android:paddingRight="3.0sp"
+    android:paddingTop="5.0sp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_row_white"
+        android:orientation="horizontal"
+        android:paddingBottom="8.0dip"
+        android:paddingTop="8.0dip">
+
+        <TextView
+            android:id="@+id/tvTaskNameSA"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:layout_weight="2.0"
+            android:gravity="center_vertical"
+            android:text="TextView"
+            android:textColor="#ff008a43"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@+id/tvTaskPlanSA"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:maxLength="4"
+            android:text="0000"
+            android:textColor="#ffde5d83"
+            android:textSize="15.0sp" />
+
+        <TextView
+            android:id="@+id/tvTaskReportSA"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:maxLength="4"
+            android:text="0000"
+            android:textColor="#ffde5d83"
+            android:textSize="15.0sp" />
+
+        <TextView
+            android:id="@+id/tvTaskPercentageSA"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:text="00%"
+            android:textColor="#ffde5d83"
+            android:textSize="15.0sp" />
+    </LinearLayout>
+</LinearLayout>

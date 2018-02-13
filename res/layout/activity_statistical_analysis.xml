@@ -1,0 +1,1534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_layout_amardairy"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_actionbar"
+        layout="@layout/toolbar_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFF"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/header"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip"
+                    android:background="?attr/colorPrimary">
+
+                    <RelativeLayout
+                        android:layout_width="40.0dip"
+                        android:layout_height="30.0dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5.0dip">
+
+                        <ImageButton
+                            android:id="@+id/ibPreviousSA"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/b_arrow_left" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvDateSA"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5.0dip"
+                                android:text="Kicu Ekta hobe"
+                                android:textColor="#ffffffff"
+                                android:textSize="18.0sp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="40.0dip"
+                        android:layout_height="30.0dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5.0dip">
+
+                        <ImageButton
+                            android:id="@+id/ibNextSA"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/b_arrow_right" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- quran study  2-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/item_list_style_color"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffd0e4ea"
+                        android:gravity="center"
+                        android:text="কুরআন অধ্যয়ন"
+                        android:textColor="#ff000000"
+                        android:textSize="13.0sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="25.0dip"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip">
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3.0dip"
+                        android:layout_weight="1.8"
+                        android:textColor="#000"
+                        android:textSize="11.0sp" />
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:text="প্ল্যান"
+                        android:textColor="#000"
+                        android:textSize="11.0sp" />
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:text="রিপোর্ট"
+                        android:textColor="#000"
+                        android:textSize="11.0sp" />
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="শতকরা"
+                        android:textColor="#000"
+                        android:textSize="11.0sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip">
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.8"
+                        android:gravity="center_vertical"
+                        android:text="মোট দিন"
+                        android:textColor="#000"
+                        android:textSize="12.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvPlanTotalDayQuranSA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:maxLength="4"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvReportTotalDayQuranSA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:maxLength="4"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvPercentageTotalDayQuranSA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip">
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.8"
+                        android:gravity="center_vertical"
+                        android:text="গড় আয়াত"
+                        android:textColor="#000"
+                        android:textSize="12.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvPlanAverageAyatQuranSA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:maxLength="7"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvReportAverageAyatQuranSA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:maxLength="4"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvPercentageAverageAyatQuranSA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+                </TableRow>
+
+
+            </LinearLayout>
+
+            <!-- Hadith study  2-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/item_list_style_white"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffd0e4ea"
+                        android:gravity="center"
+                        android:text="হাদিস অধ্যয়ন"
+                        android:textColor="#ff000000"
+                        android:textSize="13.0sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="25.0dip"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip">
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3.0dip"
+                        android:layout_weight="1.8"
+                        android:textColor="#000"
+                        android:textSize="11.0sp" />
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:text="প্ল্যান"
+                        android:textColor="#000"
+                        android:textSize="11.0sp" />
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:text="রিপোর্ট"
+                        android:textColor="#000"
+                        android:textSize="11.0sp" />
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="শতকরা"
+                        android:textColor="#000"
+                        android:textSize="11.0sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip">
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.8"
+                        android:gravity="center_vertical"
+                        android:text="মোট দিন"
+                        android:textColor="#000"
+                        android:textSize="12.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvPlanTotalDayHadithSA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:maxLength="7"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvReportTotalDayHadithSA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:maxLength="4"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvPercentageTotalDayHadithSA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip">
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.8"
+                        android:gravity="center_vertical"
+                        android:text="গড় হাদিস"
+                        android:textColor="#000"
+                        android:textSize="12.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvPlanAverageHadisHadithSA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:maxLength="7"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvReportAverageHadisHadithSA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:maxLength="4"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvPercentageAverageHadisHadithSA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+                </TableRow>
+
+            </LinearLayout>
+
+
+            <!-- literature study  3-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/item_list_style_color"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffd0e4ea"
+                        android:gravity="center"
+                        android:text="সাহিত্য অধ্যয়ন"
+                        android:textColor="#ff000000"
+                        android:textSize="13.0sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="25.0dip"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip">
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3.0dip"
+                        android:layout_weight="1.8"
+                        android:textColor="#000"
+                        android:textSize="11.0sp" />
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:text="প্ল্যান"
+                        android:textColor="#000"
+                        android:textSize="11.0sp" />
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:text="রিপোর্ট"
+                        android:textColor="#000"
+                        android:textSize="11.0sp" />
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="শতকরা"
+                        android:textColor="#000"
+                        android:textSize="11.0sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip">
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.8"
+                        android:gravity="center_vertical"
+                        android:text="মোট পৃষ্ঠা"
+                        android:textColor="#000"
+                        android:textSize="12.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvPlanTotalPageLiteratureSA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:maxLength="7"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvReportTotalPageLiteratureSA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:maxLength="4"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvPercentageTotalPageLiteratureSA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip">
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.8"
+                        android:gravity="center_vertical"
+                        android:text="ইসলামী(পৃষ্ঠা)"
+                        android:textColor="#000"
+                        android:textSize="12.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvPlanIslamicPageLiteratureSA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:maxLength="7"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvReportIslamicPageLiteratureSA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:maxLength="4"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvPercentageIslamicPageLiteratureSA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip">
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.8"
+                        android:gravity="center_vertical"
+                        android:text="অন্যান্য (পৃষ্ঠা)"
+                        android:textColor="#000"
+                        android:textSize="12.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvPlanOtherPageLiteratureSA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:maxLength="7"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvReportOtherPageLiteratureSA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:maxLength="4"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvPercentageOtherPageLiteratureSA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+                </TableRow>
+            </LinearLayout>
+
+            <!-- academic study  2-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/item_list_style_white"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffd0e4ea"
+                        android:gravity="center"
+                        android:text="পাঠ্য পুস্তক অধ্যয়ন"
+                        android:textColor="#ff000000"
+                        android:textSize="13.0sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="25.0dip"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip">
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3.0dip"
+                        android:layout_weight="1.8"
+                        android:textColor="#000"
+                        android:textSize="11.0sp" />
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:text="প্ল্যান"
+                        android:textColor="#000"
+                        android:textSize="11.0sp" />
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:text="রিপোর্ট"
+                        android:textColor="#000"
+                        android:textSize="11.0sp" />
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="শতকরা"
+                        android:textColor="#000"
+                        android:textSize="11.0sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip">
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.8"
+                        android:gravity="center_vertical"
+                        android:text="মোট দিন"
+                        android:textColor="#000"
+                        android:textSize="12.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvPlanTotalDayAcademicSA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:maxLength="7"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvReportTotalDayAcademicSA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:maxLength="4"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvPercentageTotalDayAcademicSA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip">
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.8"
+                        android:gravity="center_vertical"
+                        android:text="গড় ঘন্টা"
+                        android:textColor="#000"
+                        android:textSize="12.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvPlanAverageHourAcademicSA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:maxLength="7"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvReportAverageHourAcademicSA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:maxLength="4"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvPercentageAverageHourAcademicSA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+                </TableRow>
+            </LinearLayout>
+
+            <!-- class 1-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/item_list_style_white"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffd0e4ea"
+                        android:gravity="center"
+                        android:text="ক্লাস"
+                        android:textColor="#ff000000"
+                        android:textSize="13.0sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="25.0dip"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip">
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3.0dip"
+                        android:layout_weight="1.8"
+                        android:textColor="#000"
+                        android:textSize="11.0sp" />
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:text="প্ল্যান"
+                        android:textColor="#000"
+                        android:textSize="11.0sp" />
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:text="রিপোর্ট"
+                        android:textColor="#000"
+                        android:textSize="11.0sp" />
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="শতকরা"
+                        android:textColor="#000"
+                        android:textSize="11.0sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip">
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.8"
+                        android:gravity="center_vertical"
+                        android:text="উপস্থিতি(দিন)"
+                        android:textColor="#000"
+                        android:textSize="12.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvPlanPresentClassSA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:maxLength="7"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvReportPresentClassSA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:maxLength="4"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvPercentagePresentClassSA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+                </TableRow>
+            </LinearLayout>
+
+            <!-- namaz 1-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/item_list_style_color"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffd0e4ea"
+                        android:gravity="center"
+                        android:text="নামায"
+                        android:textColor="#ff000000"
+                        android:textSize="13.0sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="25.0dip"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip">
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3.0dip"
+                        android:layout_weight="1.8"
+                        android:textColor="#000"
+                        android:textSize="11.0sp" />
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:text="প্ল্যান"
+                        android:textColor="#000"
+                        android:textSize="11.0sp" />
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:text="রিপোর্ট"
+                        android:textColor="#000"
+                        android:textSize="11.0sp" />
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="শতকরা"
+                        android:textColor="#000"
+                        android:textSize="11.0sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip">
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.8"
+                        android:gravity="center_vertical"
+                        android:text="মোট জামায়াত"
+                        android:textColor="#000"
+                        android:textSize="12.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvPlanTotalJamaatNamazSA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:maxLength="7"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvReportTotalJamaatNamazSA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:maxLength="4"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvPercentageTotalJamaatNamazSA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+                </TableRow>
+            </LinearLayout>
+
+
+            <!-- OrgDuty work 4-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:layout_marginTop="5.0sp"
+                android:background="@drawable/item_list_style_white"
+                android:orientation="vertical"
+                android:padding="5.0sp">
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffd0e4ea"
+                        android:gravity="center"
+                        android:text="সাংগঠনিক দায়িত্ব পালন"
+                        android:textColor="#ff000000"
+                        android:textSize="13.0sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="25.0dip"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip">
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3.0dip"
+                        android:layout_weight="1.8"
+                        android:textColor="#000"
+                        android:textSize="11.0sp" />
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:text="প্ল্যান"
+                        android:textColor="#000"
+                        android:textSize="11.0sp" />
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:text="রিপোর্ট"
+                        android:textColor="#000"
+                        android:textSize="11.0sp" />
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="শতকরা"
+                        android:textColor="#000"
+                        android:textSize="11.0sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0sp">
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="দাওয়াতী কাজ"
+                        android:textColor="#ff008a43"
+                        android:textSize="13.0sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip">
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.8"
+                        android:gravity="center_vertical"
+                        android:text="মোট দিন"
+                        android:textColor="#000"
+                        android:textSize="12.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvPlanTotalDayCallOrgDutySA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:maxLength="7"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvReporTotalDayCallOrgDutySA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:maxLength="4"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvPercentageTotalDayCallOrgDutySA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip">
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.8"
+                        android:gravity="center_vertical"
+                        android:text="মোট ঘন্টা"
+                        android:textColor="#000"
+                        android:textSize="12.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvPlanTotalHourCallOrgDutySA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:maxLength="7"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvReportTotalHourCallOrgDutySA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:maxLength="4"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvPercentageTotalHourCallOrgDutySA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0sp">
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="অন্যান্য সাংগঠনিক কাজ"
+                        android:textColor="#ff008a43"
+                        android:textSize="13.0sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip">
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.8"
+                        android:gravity="center_vertical"
+                        android:text="মোট দিন"
+                        android:textColor="#000"
+                        android:textSize="12.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvPlanTotalDayOtherOrgDutySA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:maxLength="7"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvReportTotalDayOtherOrgDutySA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:maxLength="4"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvPercentageTotalDayOtherOrgDutySA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip">
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.8"
+                        android:gravity="center_vertical"
+                        android:text="গড় ঘন্টা"
+                        android:textColor="#000"
+                        android:textSize="12.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvPlanAverageHourOtherOrgDutySA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:maxLength="7"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvReportAverageHourOtherOgrDutySA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:maxLength="4"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvPercentageAverageHourOtherOrgDutySA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+                </TableRow>
+            </LinearLayout>
+
+
+            <!-- other 3-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dp"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/item_list_style_color"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffd0e4ea"
+                        android:gravity="center"
+                        android:text="বিবিধ"
+                        android:textColor="#ff000000"
+                        android:textSize="13.0sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="25.0dip"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip">
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3.0dip"
+                        android:layout_weight="1.8"
+                        android:textColor="#000"
+                        android:textSize="11.0sp" />
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:text="প্ল্যান"
+                        android:textColor="#000"
+                        android:textSize="11.0sp" />
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:text="রিপোর্ট"
+                        android:textColor="#000"
+                        android:textSize="11.0sp" />
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="শতকরা"
+                        android:textColor="#000"
+                        android:textSize="11.0sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip">
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.8"
+                        android:gravity="center_vertical"
+                        android:text="পত্রপত্রিকা পাঠ"
+                        android:textColor="#000"
+                        android:textSize="12.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvPlanNewspaperMiscSA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:maxLength="7"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvReportNewspaperMiscSA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:maxLength="4"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvPercentageNewspaperMiscSA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip">
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.8"
+                        android:gravity="center_vertical"
+                        android:text="শরীর চর্চা"
+                        android:textColor="#000"
+                        android:textSize="12.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvPlanPhysicalExerciseMiscSA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:maxLength="7"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvReportPhysicalExerciseMiscSA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:maxLength="4"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvPercentagePhysicalExerciseMiscSA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip">
+
+                    <com.mahediapps.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.8"
+                        android:gravity="center_vertical"
+                        android:text="আত্নসমালোচনা"
+                        android:textColor="#000"
+                        android:textSize="12.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvPlanCriticismMiscSA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:maxLength="7"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvReportCriticismMiscSA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:maxLength="4"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvPercentageCriticismMiscSA"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:textColor="#000"
+                        android:textSize="15.0sp" />
+                </TableRow>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mahediapps.personalreport" >
+
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <receiver android:name="com.mahediapps.model.AlarmReceiver" android:process=":remote"/>
+        <receiver android:enabled="false" android:name="com.mahediapps.model.SampleBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.mahediapps.personalreport.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mahediapps.personalreport.CreateAccount"/>
+        <activity android:name="com.mahediapps.personalreport.DailyReport" android:screenOrientation="landscape"/>
+        <activity android:name="com.mahediapps.personalreport.MainActivity" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name="com.mahediapps.personalreport.MonthlyPlan"  android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name="com.mahediapps.personalreport.MonthlyReport" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name="com.mahediapps.personalreport.Settings"/>
+        <activity android:name="com.mahediapps.personalreport.SearchReport"/>
+        <activity android:name="com.mahediapps.personalreport.SearchReportByPreviousDays"/>
+        <activity android:name="com.mahediapps.personalreport.StatisticalAnalysis"/>
+        <activity android:name="com.mahediapps.personalreport.Help"/>
+    </application>
+
+</manifest>

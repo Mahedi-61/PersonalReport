@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="5.0dip"
+        android:paddingRight="5.0dip"
+        android:paddingTop="3dp">
+
+        <TextView
+            android:id="@+id/tvDateDR"
+            android:layout_width="50.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4.0dip"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <!-- study 4 -->
+        <TextView
+            android:id="@+id/tvQuranDR"
+            android:layout_width="60.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4.0dip"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/tvHadithDR"
+            android:layout_width="60.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4.0dip"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/tvLiteratureDR"
+            android:layout_width="60.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4.0dip"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/tvAcademicDR"
+            android:layout_width="70.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4.0dip"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <!-- class -->
+        <LinearLayout
+            android:layout_width="50.0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <CheckBox
+                android:id="@+id/cbclassDR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4.0dip"
+                android:enabled="false"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <!-- namaz 2 -->
+        <TextView
+            android:id="@+id/tvJamaatDR"
+            android:layout_width="60.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4.0dip"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/tvKajjaDR"
+            android:layout_width="50.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4.0dip"
+            android:gravity="center"
+            android:textColor="#ffff0000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <!-- contact 7 -->
+        <TextView
+            android:id="@+id/tvMemberDR"
+            android:layout_width="60.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4.0dip"
+            android:gravity="center"
+            android:paddingLeft="10.0dip"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/tvAssociateDR"
+            android:layout_width="50.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4.0dip"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/tvWorkerDR"
+            android:layout_width="50.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4.0dip"
+            android:gravity="center"
+            android:paddingLeft="10.0dip"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/tvSupporterDR"
+            android:layout_width="60.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4.0dip"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/tvFriendDR"
+            android:layout_width="50.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4.0dip"
+            android:gravity="center"
+            android:paddingLeft="10.0dip"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/tvTalentStudentDR"
+            android:layout_width="80.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4.0dip"
+            android:gravity="center"
+            android:paddingLeft="10.0dip"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/tvWellWisherDR"
+            android:layout_width="70.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4.0dip"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <!-- OrgDuty 2 -->
+        <TextView
+            android:id="@+id/tvCallDR"
+            android:layout_width="90.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4.0dip"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/tvOtherDR"
+            android:layout_width="100.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4.0dip"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <LinearLayout
+            android:layout_width="80.0dip"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <CheckBox
+                android:id="@+id/cbNewspaperDR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4.0dip"
+                android:enabled="false" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <LinearLayout
+            android:layout_width="80.0dip"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <CheckBox
+                android:id="@+id/cbPhysicalExerciseDR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4.0dip"
+                android:enabled="false" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <LinearLayout
+            android:layout_width="100.0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <CheckBox
+                android:id="@+id/cbCriticismDR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4.0dip"
+                android:enabled="false" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
